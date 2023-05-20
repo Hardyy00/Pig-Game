@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Press+Start+2P&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: uppercase;
+}
+
+body {
+  margin: 0px;
+  height: 100vh;
+  font-family: 'Nunito', sans-serif;
+  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  font-size: 62.5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+main {
+  position: relative;
+  display: flex;
+  width: 78rem;
+  height: 45rem;
+  border-radius: 0.7rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+  box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, 0.3);
+  transition: all 0.75s;
+  overflow: hidden;
+}
+
+.player {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  transition: all 0.75s;
+}
+
+.dice {
+  width: 8rem;
+  height: 8rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 18rem;
+  box-shadow: 0 1rem 5rem rgb(0, 0, 0, 0.2);
+}
+
+.name {
+  margin-top: 6.8rem;
+  font-size: 3.2rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  opacity: 0.7;
+  color: rgb(0, 0, 0, 1);
+}
+
+.score {
+  font-size: 6.3rem;
+  color: #c7365f;
+  margin-top: 0rem;
+}
+
+.card {
+  width: 40%;
+  height: 18%;
+  border-radius: 0.5rem;
+  background-color: #c7365f;
+  margin-top: 11.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  transition: all 0.75s;
+  opacity: 0.8;
+}
+
+.card-label {
+  margin-top: 1.3rem;
+  font-size: 1.3rem;
+  font-weight: normal;
+}
+
+.current-score {
+  margin-top: 0.5rem;
+  font-size: 2.7rem;
+}
+
+.btn {
+  position: absolute;
+  left: 50%;
+  border: none;
+  background-color: white;
+  opacity: 0.85;
+  transform: translate(-50%, -50%);
+  color: rgb(47, 45, 45);
+  font-size: 1.3rem;
+  text-align: center;
+  letter-spacing: 0.04rem;
+  /* padding-inline: 0.5rem; */
+  z-index: 5;
+  transition: all 0.75s;
+  box-shadow: 0rem 1rem 3rem rgb(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.btn:active {
+  box-shadow: 0 1rem 3rem rgb(71, 69, 69);
+  transform: translate(-50%, -42%);
+  outline: none;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn::first-letter {
+  font-size: 2rem;
+  margin-right: 0.3rem;
+  line-height: 3rem;
+  margin-left: 0.2rem;
+}
+
+.new-btn {
+  top: 4.5rem;
+  width: 15rem;
+  height: 3.5rem;
+  border-radius: 2rem;
+}
+
+.roll-btn {
+  top: 32rem;
+  width: 14.2rem;
+  height: 3.7rem;
+  border-radius: 2rem;
+}
+
+.hold-btn {
+  top: 37rem;
+  border-radius: 2rem;
+  width: 10.5rem;
+  height: 3.5rem;
+}
+
+/*    Classes to change with the change of player   */
+
+.active-player {
+  border: initial;
+  background-color: rgba(255, 255, 255, 0.556);
+  opacity: 1;
+}
+
+.active-player .name {
+  opacity: 0.9;
+  font-weight: 600;
+}
+
+.active-player .score {
+  font-weight: bolder;
+}
+
+.active-player .card {
+  opacity: 1;
+}
+
+.winner {
+  background-color: #2f2f2f;
+  /* background-color: rgb(11, 219, 11); */
+}
+
+.winner .name {
+  opacity: 1;
+  font-weight: 1000;
+  color: #c7365f;
+}
+
+.winner .card {
+  opacity: 1;
+}
+
+/*  */
+.hidden {
+  display: none;
+}

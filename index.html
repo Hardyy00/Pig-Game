@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>The Pig Game</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <main>
+      <section class="player player--1 active-player">
+        <h2 class="name" id="player-1">Player 1</h2>
+        <p class="score" id="player-1-score">43</p>
+
+        <div class="card">
+          <h2 class="card-label">Current</h2>
+          <p class="current-score" id="current-1">0</p>
+        </div>
+      </section>
+
+      <section class="player player--2">
+        <h2 class="name" id="player-2">Player 2</h2>
+        <p class="score" id="player-2-score">24</p>
+
+        <div class="card">
+          <h2 class="card-label">Current</h2>
+          <p class="current-score" id="current-2">0</p>
+        </div>
+      </section>
+
+      <img src="images/dice-5.png" class="dice" alt="Dice not available" />
+      <button class="btn new-btn">🔄️ New Game</button>
+      <button class="btn roll-btn">🎲 Roll Dice</button>
+      <button class="btn hold-btn">📥 Hold</button>
+    </main>
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>
